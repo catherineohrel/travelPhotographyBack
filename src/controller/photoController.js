@@ -10,7 +10,7 @@ const getAll = async (req, res) => {
 }
 
 const getOne = async (req, res) => {
-  const photoId = parsInt(req.params.id, 10)
+  const photoId = parseInt(req.params.id, 10)
   try {
     if(isNaN(photoId)){
       throw new Error()
